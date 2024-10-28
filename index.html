@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achraf Card</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+       
+        @media (min-width: 320px) and (max-width: 619px) {
+.container-custom {
+    overflow: auto;
+    height: 95vh;
+}}
 
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
-            background-color: #5b5c60;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
             color: #ccc;
             display: flex;
             justify-content: center;
@@ -27,7 +34,7 @@
             border-radius: 30px;
             padding: 30px;
             box-shadow: 0 0 20px rgba(26, 26, 29, 0.5);
-            width: 80%;
+            width: 90%;
             max-width: 1000px;
             opacity: 0;
             animation: fadeIn 2s forwards;
@@ -155,7 +162,7 @@
                 <h2>Contact</h2>
                 <p>📞 <strong>Phone:</strong> +212 62398-6028</p>
                 <h2><strong>Website:</strong></h2>
-                <img src="qr.png" alt="QR Code to my website" width="100" height="100">
+                <img src="images/qr.png" alt="QR Code to my website" width="100" height="100">
                 
             </div>
         </main>
