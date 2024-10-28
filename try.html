@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achraf Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #5b5c60;
+            color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container-custom {
+            background-color: #090909;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(26, 26, 29, 0.5);
+            width: 80%;
+            max-width: 1000px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .icons a {
+            color: #ccc;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .welcome-text h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-family: 'Pacifico', cursive;
+            opacity: 0;
+            animation: slideInLeft 1s forwards;
+        }
+
+        .welcome-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideInLeft 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .projects h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideInRight 1s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects ul li {
+            margin-bottom: 10px;
+        }
+
+        .projects ul li a {
+            color: #ffffffa5;
+            text-decoration: none;
+        }
+
+        .projects ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-custom">
+        <header class="header">
+            <div class="logo">
+            </div>
+            <div class="icons">
+                <a href="mailto:hammouachraf56@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/achrafhammou" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/achraf-hammou-214b09222/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+        <main class="main-content row">
+            <div class="welcome-text col-lg-8">
+                <h1>Welcome.</h1>
+                <p>My name is Achraf Hammou, a full-stack developer based in Morocco. I have worked on a wide range of projects, from travel mobile application to management platforms and e-commerce websites.</p>
+
+                    <p>I am passionate about creating modern, visually appealing, and optimized interfaces, combining technical precision with an intuitive user experience.</p>
+            </div>
+            <div class="projects col-lg-4">
+                <h2>Contact</h2>
+                <p>📞 <strong>Phone:</strong> +212 62398-6028</p>
+                <h2><strong>Website:</strong></h2>
+                <img src="qr.png" alt="QR Code to my website" width="100" height="100">
+                
+            </div>
+        </main>
+        <footer class="footer">
+            <p>© 2024 AchrafHammou</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
